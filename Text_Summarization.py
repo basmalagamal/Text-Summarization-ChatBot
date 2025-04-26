@@ -10,6 +10,13 @@ from langdetect import detect, LangDetectException
 from textblob import TextBlob
 import spacy
 import nltk
+import os
+
+# Download punkt tokenizer if not already available
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 
 
