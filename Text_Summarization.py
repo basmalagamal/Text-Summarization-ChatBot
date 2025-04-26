@@ -8,6 +8,9 @@ from sumy.summarizers.text_rank import TextRankSummarizer
 from langdetect import detect, LangDetectException
 from textblob import TextBlob
 import spacy
+import nltk
+
+
 
 # Load Spacy model for Named Entity Recognition (NER)
 nlp = spacy.load('en_core_web_sm')
